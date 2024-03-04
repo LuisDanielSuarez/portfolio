@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#welcome-section, #projects, #contact-info {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Latex logo*/
+/* adapted from https://stackoverflow.com/a/8160532/15032126 */
+.latex-logo {
+    display: inline;
+}
+
+.latex-logo span {
+    font-family: serif;
+    font-size: 0.8em;
+}
+
+.latex .sub, .latex .sup {
+  text-transform: uppercase;
+}
+
+.latex .sub {
+  vertical-align: -0.5ex;
+  margin-left: -0.1667em;
+  margin-right: -0.125em;
+}
+
+.latex, .latex .sub {
+  font-size: 1em;
+}
+
+.latex .sup {
+  font-size: 0.85em;
+  vertical-align: 0.15em;
+  margin-left: -0.36em;
+  margin-right: -0.15em;
+}
+
+
+/* Nav-bar */
+#navbar{
+    position: fixed;
+    width: 100%;
+    padding: 1.8rem 0 1.8rem 0;
+    top: 0;
+    background-color: #666699;
+    display: flex;
+    justify-content: end;
+}
+
+#navbar-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+#navbar-links::after {
+    content: "";
+}
+
+#navbar-links a {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 800;
+}
+
+
+/* Welcome */
+#welcome-section {
+    height: 100vh;
+    background: linear-gradient(to right, #0000cc, #000066);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#welcome-description {
+    margin: auto auto;
+    text-align: center;
+}
+
+#welcome-description h1 {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+#welcome-description p {
+    margin-top: 1.5rem;
+    color: tomato;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/* Projects */
+#projects {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects-header {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2.2rem;
+    color: #353535;
+    margin-bottom: 5rem;
+}
+
+#projects-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-auto-rows: 500px;
+    gap: 45px;
+}
+
+.project-tile {
+    /*height: 500px;*/
+    /*width: 350px;*/
+    overflow: hidden;
+    border-radius: 7px;
+    background-color: #f1f0ef;
+}
+
+.project-picture-container {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    background-color: #0000cc;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.project-title p {
+    text-align: center;
+}
+
+.prog-icons {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: .4rem;
+}
+
+.project-picture {
+    height: 100%;
+}
+
+/* Double letter logos */
+.double-letter-logo-grid {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr)
+}
+
+.top-letter, .bottom-letter {
+    font-size: 12rem;
+    color: #353535;
+}
+
+.top-letter {
+    grid-area: 1 / 1 / 4 / 4;
+}
+
+.bottom-letter {
+    grid-area: 2 / 2 / 5 / 5;
+}
+
+/* Project - Titanic */
+#titanic-picture {
+    height: 100%;
+    margin-left: -50%;
+}
+
+/* Project - Calendar */
+#project-calendar .project-picture-container {
+    display: grid;
+    place-content: center;
+}
+
+#calendar-picture {
+    margin: auto;
+    width: 98%;
+}
+
+/* Project - Portfolio */
+#portfolio-picture {
+    height: 80%;
+}
+
+/* Project - Monty Hall paradox */
+#monty-hall-picture {
+    height: auto;  /* overrides .project-picture */
+    width: 90%;
+}
+
+/* Contact */
+#contact-info {
+    height: 100vh;
+    background-color: #000099;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact-text {
+    margin: 0 auto;
+}
+
+#contact-text__invitation {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+#contact-text__links {
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+#contact-text__links a {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+ .contact-link > i[class^=fa]::after {
+    content: "\00a0";
+}
+
+#contact-text__links a:hover, #contact-text__links a:focus {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1200px) {
+    
+    #projects-container {
+        max-width: 745px;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    #projects-container {
+        max-width: 350px;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<htm lang="en">
+    <header>
+        <meta charset="utf-8" />
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <!-- GFonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles.css" />
+        <title>Portfolio</title>
+    </header>
+    <body>
+        <nav id="navbar">
+            <article id="navbar-links">
+                <a href="#projects">My Projects</a>
+                <a href="#contact-info">Contact</a>
+            </article>
+        </nav>
+        <section id="welcome-section">
+            <article id="welcome-description">
+                <h1>Hi, I'm Luis Suárez</h1>
+                <p><em>a Neuroscientist moving into the alluring field of Data&nbsp;Science</em></p>
+            </article>
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects">
+            <h1 id="projects-header">Some stuff I've been doing</h1>
+            <div id="projects-container">
+
+                <!-- Titanic -->
+                <div id="project-kaggle-titanic" class="project-tile">
+                    <a class="project-link" href="https://www.kaggle.com/code/luisdsuarez/titanic-first-approach">
+                        <div class="project-picture-container">
+                            <img id="titanic-picture" class="project-picture" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/RMS_Titanic_3.jpg/640px-RMS_Titanic_3.jpg" alt="Titanic departing Southampton" />
+                        </div>
+                        <article class="project-title">
+                            <div class="prog-icons">
+                                <p><i class="fab fa-python"></i></p>
+                            </div>
+                            <p>Kaggle's Titanic Competition</p>
+                        </article>
+                    </a>
+                </div>
+
+                <!-- Logistic Regressor -->
+                <div id="project-log_reg" class="project-tile">
+                    <a class="project-link" href="https://github.com/LuisDanielSuarez/BinaryLogisticRegression">
+                        <div class="project-picture-container">
+                            <div class="double-letter-logo-grid">
+                                <span class="top-letter">L</span><span class="bottom-letter">R</span>
+                            </div>
+                        </div>
+                        <article class="project-title">
+                            <div class="prog-icons">
+                                <p><i class="fab fa-python"></i></p>
+                            </div>
+                            <p>Binary Logistic Regressor</br>from scratch</p>
+                        </article>
+                    </a>
+                </div>
+
+                <!-- DelDupls -->
+                <div id="project-del_dupls" class="project-tile">
+                    <a class="project-link" href="https://github.com/Ignatius-Reilly/deldupls">
+                        <div class="project-picture-container">
+                            <div class="double-letter-logo-grid">
+                                <span class="top-letter">D</span><span class="bottom-letter">D</span>
+                            </div>
+                        </div>
+                        <article class="project-title">
+                            <div class="prog-icons">
+                                <p><i class="fab fa-python"></i></p>
+                            </div>
+                            <p>Delete duplicate files</p>
+                        </article>
+                    </a>
+                </div>
+
+                <!-- Calendar -->
+                <div id="project-calendar" class="project-tile">
+                    <a class="project-link" href="https://github.com/Ignatius-Reilly/SimpleCalendar">
+                        <div class="project-picture-container">
+                            <img id="calendar-picture" class="project-picture" src="https://raw.githubusercontent.com/Ignatius-Reilly/SimpleCalendar/main/Examples/Example1.png" alt="Example of a minimalistic calendar" />
+                        </div>
+                        <article class="project-title">
+                            <div class="prog-icons">
+                                <p><i class="fab fa-python"></i></p>
+                                <div class="latex-logo"><p><span class="latex">L<span class="sup">a</span>T<span class="sub">e</span>X</span></p></div>
+                            </div>
+                            <p>Minimalist Calendar</p>
+                        </article>
+                    </a>
+                </div>
+
+                <!-- Responsive Portfolio -->
+                <div id="project-portfolio" class="project-tile">
+                    <a class="project-link" href="">  <!-- Reloads page. Could be href="#" or href="javascript:;" instead -->
+                        <div class="project-picture-container">
+                            <img id="portfolio-picture" class="project-picture" src="./images/portfolio_L4.png" alt="A picture of this portfolio" />
+                        </div>
+                        <article class="project-title">
+                            <div class="prog-icons">
+                                <p><i class="fab fa-html5"></i></p>
+                                <p><i class="fab fa-css3"></i></p>
+                            </div>
+                            <p>Responsive Portfolio</p>
+                        </article>
+                    </a>
+                </div>
+
+                <!-- Monty Hall -->
+                <div id="project-monty-hall" class="project-tile">
+                    <a class="project-link" href="https://github.com/LuisDanielSuarez/montyhall">
+                        <div class="project-picture-container">
+                            <img id="monty-hall-picture" class="project-picture" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Monty_open_door.svg" alt="A goat behind a door" />
+                        </div>
+                        <article class="project-title">
+                            <div class="prog-icons">
+                                <p><i class="fab fa-python"></i></p>
+                                <p><i class="fab fa-r-project"></i></p>
+                            </div>
+                            <p>Monty Hall Paradox</br>Simulation</p>
+                        </article>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- End Projects -->
+        
+        <section id="contact-info">
+            <article id="contact-text">
+                <section id="contact-text__invitation">
+                    <p>Let's get in contact!</p>
+                </section>
+                <section id="contact-text__links">
+                    <a id="profile-link" class="contact-link" href="https://github.com/luisdanielsuarez" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                    <a id="linkedin-link" class="contact-link" href="https://www.linkedin.com/in/luisdsuarez/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a id="mail-link" class="contact-link" href="mailto:luisdsuarez@yahoo.com"><i class="fa fa-envelope"></i>e-mail</a>
+                </section>
+            </article>
+        </section>
+    </body>
+</htm>
+
+
+
+
+
